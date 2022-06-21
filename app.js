@@ -3,8 +3,8 @@ const nightmare = Nightmare({ show: true });
 
 nightmare
   .goto("https://www.hackerrank.com/auth/login")
-  .type("#input-1", "")
-  .type("#input-2", "")
+  .type("#input-1", "username") //YOUR CREDENTIALS
+  .type("#input-2", "password") //YOUR CREDENTIALS
   .click(
     "#tab-1-content-1 > div.login-form.auth-form.theme-m > form > div.form-item.clearfix > button"
   )
